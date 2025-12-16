@@ -6,14 +6,6 @@ pipeline {
         maven 'maven3'
     }
 
-    stages {
-        stage('Checkout Code') {
-            steps {
-                git branch: 'jmp3',
-                    url: 'https://github.com/Suprith25/Jenkins-mini-project.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 dir('sample-app') {
