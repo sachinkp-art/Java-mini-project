@@ -13,7 +13,7 @@ pipeline {
                 }
             }
         }
-        }
+        
 
         stage('Upload to JFrog') {
             steps {
@@ -56,5 +56,5 @@ pipeline {
             }
         }
     }
-
+}
 
