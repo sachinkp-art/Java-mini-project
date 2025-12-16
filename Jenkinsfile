@@ -5,13 +5,14 @@ pipeline {
         jdk 'jdk17'
         maven 'maven3'
     }
-
-        stage('Build') {
+        stages {
+            stage('Build') {
             steps {
                 dir('sample-app') {
                     sh 'mvn clean package -DskipTests'
                 }
             }
+        }
         }
 
         stage('Upload to JFrog') {
