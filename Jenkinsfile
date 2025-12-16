@@ -32,7 +32,7 @@ pipeline {
 
         stage('Deploy to Tomcat') {
             steps {
-                sshagent (credentials: ['tomcat-ssh-key']) {
+                sshagent (credentials: ['tomcat-ssh-keys']) {
                     sh '''
                         echo "Deploying WAR to Tomcat server..."
 
