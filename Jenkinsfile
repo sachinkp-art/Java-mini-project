@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters {
         string(name: 'APP_NAME', defaultValue: 'sample', description: 'Application name (WAR name)')
-        string(name: 'TOMCAT_SERVER_IP', defaultValue: '35.154.143.68', description: 'Tomcat server IP')
+        string(name: 'TOMCAT_SERVER_IP', defaultValue: '13.235.94.54', description: 'Tomcat server IP')
        
     }
 
