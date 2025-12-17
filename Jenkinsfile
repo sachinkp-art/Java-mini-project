@@ -3,9 +3,7 @@ pipeline {
     parameters {
         string(name: 'APP_NAME', defaultValue: 'sample', description: 'Application name (WAR name)')
         string(name: 'TOMCAT_SERVER_IP', defaultValue: '35.154.143.68', description: 'Tomcat server IP')
-        string(name: 'TOMCAT_USER', defaultValue: 'ubuntu', description: 'Tomcat server SSH user')
-        string(name: 'TOMCAT_DIR', defaultValue: '/opt/tomcat/webapps', description: 'Tomcat webapps directory')
-        string(name: 'ARTIFACTORY_REPO', defaultValue: 'java-project-generic-local', description: 'JFrog repository name')
+       
     }
 
     tools {
